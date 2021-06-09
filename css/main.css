@@ -847,6 +847,7 @@ img {
   width: 100%;
   padding: 18px 11px;
   border: solid 3px transparent;
+  border-radius: 4px;
 }
 .form__input--textarea {
   height: 180px;
