@@ -688,6 +688,7 @@ img {
 .benefit__title {
   font-weight: bold;
   color: #000;
+  font-size: 24px;
 }
 
 .benefits-section {
