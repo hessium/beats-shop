@@ -1,0 +1,41 @@
+.btn {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 18px 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  line-height: 1;
+  display: inline-block;
+  border: none;
+
+  &--theme--red {
+    color: #ffffff;
+    background: #E01F3D;
+
+    &:hover {
+      color: #E01F3D;
+      background: #ffffff;
+    }
+  }
+
+  &--theme--darkred {
+    color: #ffffff;
+    background: #CA1B36;
+
+    &:hover {
+      color: #CA1B36;
+      background: #ffffff;
+    }
+  }
+
+  &--theme--transparent {
+    color: #E01F3D;
+    background: transparent;
+    text-transform: none;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+}
