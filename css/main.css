@@ -613,7 +613,7 @@ img {
 }
 
 .order-section {
-  background: url("../img/dark.png") center center/cover no-repeat;
+  background: url("../img/dark.png") center center / cover no-repeat;
 }
 
 .headline {
