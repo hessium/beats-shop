@@ -612,6 +612,16 @@ img {
   color: #000;
 }
 
+.reviews-section {
+  position: relative;
+}
+.reviews-section:before {
+  position: absolute;
+  bottom: -26px;
+  left: 16%;
+  content: url("../img/icon/Ellipse.png");
+}
+
 .order-section {
   background: url("../img/dark.png") center center / cover no-repeat;
 }
@@ -831,7 +841,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .form__block {
