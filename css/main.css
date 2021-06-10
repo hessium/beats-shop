@@ -618,7 +618,7 @@ img {
 .reviews-section:before {
   position: absolute;
   bottom: -26px;
-  left: 16%;
+  left: 5%;
   content: url("../img/icon/Ellipse.png");
 }
 
