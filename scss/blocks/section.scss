@@ -23,6 +23,17 @@
   color: #000;
 }
 
+.reviews-section {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    bottom: -26px;
+    left: 16%;
+    content: url("../../img/icon/Ellipse.png");
+  }
+}
+
 .order-section {
   background: url('../../img/dark.png') center center / cover no-repeat;
 }
