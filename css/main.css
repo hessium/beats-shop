@@ -615,6 +615,7 @@ img {
 .reviews-section {
   position: relative;
 }
+
 .reviews-section:before {
   position: absolute;
   bottom: -26px;
