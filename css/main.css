@@ -708,7 +708,7 @@ img {
   content: url("../img/icon/triangle.png");
   position: absolute;
   bottom: -24px;
-  left: 60px;
+  left: 5%;
 }
 
 .reviews__display {
