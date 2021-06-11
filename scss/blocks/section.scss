@@ -31,12 +31,12 @@
     position: absolute;
     bottom: -26px;
     left: 5%;
-    content: url("/img/icon/Ellipse.png");
+    content: url("../../img/icon/Ellipse.png");
   }
 }
 
 .order-section {
-  background: url("/img/dark.png") center center /cover no-repeat;
+  background: url("../../img/dark.png") center center /cover no-repeat;
 
   &__title {
     margin-bottom: 49px;
