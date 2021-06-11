@@ -426,7 +426,7 @@ img {
   position: absolute;
   bottom: -28px;
   right: 16%;
-  content: url("/img/icon/Rectangle.png");
+  content: url("../img/icon/Rectangle.png");
 }
 
 .hero__title-section {
@@ -622,6 +622,7 @@ img {
 .reviews-section {
   position: relative;
 }
+
 .reviews-section:before {
   position: absolute;
   bottom: -26px;
@@ -720,7 +721,7 @@ img {
   position: relative;
 }
 .benefits-section:before {
-  content: url("/img/icon/triangle.png");
+  content: url("../img/icon/triangle.png");
   position: absolute;
   bottom: -24px;
   left: 5%;
@@ -926,7 +927,7 @@ img {
   margin-bottom: 69px;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("/img/icon/tick.png") center center no-repeat;
+  background: url("../img/icon/tick.png") center center no-repeat;
 }
 
 .radio__elem {
