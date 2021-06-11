@@ -426,7 +426,7 @@ img {
   position: absolute;
   bottom: -28px;
   right: 16%;
-  content: url("img/icon/Rectangle.png");
+  content: url("../img/icon/Rectangle.png");
 }
 
 .hero__title-section {
@@ -446,7 +446,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
-  background: url("img/headphone.png") right center/54% auto no-repeat;
+  background: url("../img/headphone.png") right center/54% auto no-repeat;
 }
 
 .hero__main-title {
@@ -626,11 +626,11 @@ img {
   position: absolute;
   bottom: -26px;
   left: 5%;
-  content: url("../../img/icon/Ellipse.png");
+  content: url("../img/icon/Ellipse.png");
 }
 
 .order-section {
-  background: url("../../img/dark.png") center center/cover no-repeat;
+  background: url("../img/dark.png") center center/cover no-repeat;
 }
 .order-section__title {
   margin-bottom: 49px;
@@ -663,7 +663,7 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url("img/icon/separator.png");
+  content: url("../img/icon/separator.png");
   position: absolute;
   top: 30px;
   right: 0;
@@ -720,7 +720,7 @@ img {
   position: relative;
 }
 .benefits-section:before {
-  content: url("img/icon/triangle.png");
+  content: url("../img/icon/triangle.png");
   position: absolute;
   bottom: -24px;
   left: 5%;
