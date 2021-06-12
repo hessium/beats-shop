@@ -3,7 +3,7 @@
   cursor: pointer;
   user-select: none;
   margin-right: 16px;
-  margin-bottom: 24px;
+
 
   &:last-child{
     margin-right: 0;
@@ -15,7 +15,7 @@
   &--checkbox {
     .radio__visible {
       border-radius: 0;
-      margin-bottom: 69px;
+      
     
 
      &:before {

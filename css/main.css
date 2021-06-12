@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
 html {
   line-height: 1.15;
@@ -349,7 +350,7 @@ body {
 
 body {
   font-size: 18px;
-  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-family: "Play", Arial, Helvetica, sans-serif;
   line-height: 1, 42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smothing: grayscale;
@@ -412,6 +413,8 @@ a {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -461,6 +464,7 @@ img {
   font-size: 21px;
   margin-bottom: 33px;
   padding-right: 10%;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -480,12 +484,6 @@ img {
   height: 40px;
 }
 
-.logo {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,6 +491,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
 }
 
 .menu__item {
@@ -503,7 +502,7 @@ img {
 }
 
 .phone-number {
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,6 +510,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Play", Arial, Helvetica, sans-serif;
 }
 
 .phone-number__icon-elem {
@@ -583,6 +583,8 @@ img {
   color: #fff;
   background: transparent;
   text-transform: none;
+  font-size: 16px;
+  font-weight: normal;
 }
 .btn--theme--transparent:hover {
   color: #000000;
@@ -610,7 +612,7 @@ img {
 }
 
 .section__title {
-  font-size: 55px;
+  font-size: 48px;
   line-height: 52px;
   font-weight: bold;
   margin-bottom: 60px;
@@ -665,7 +667,7 @@ img {
 .benefits__item:before {
   content: url("../img/icon/separator.png");
   position: absolute;
-  top: 30px;
+  top: 55px;
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -714,6 +716,8 @@ img {
 
 .benefit__desc {
   padding: 0 14px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .benefits-section {
@@ -727,7 +731,7 @@ img {
 }
 
 .reviews-section__title {
-  margin-bottom: 43px;
+  margin-bottom: 32px;
 }
 
 .reviews__container {
@@ -736,7 +740,7 @@ img {
 
 .reviews__display {
   background: #F8FAF9;
-  padding: 50px 45px 34px;
+  padding: 42px;
   margin-bottom: 15px;
   overflow: hidden;
   position: relative;
@@ -759,6 +763,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reviews__avatar {
@@ -777,7 +784,7 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .reviews__title {
@@ -790,10 +797,11 @@ img {
 .reviews__text {
   margin-bottom: 38px;
   padding: 0 140px 0 0;
+  font-size: 16px;
 }
 
 .reviews__author {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   color: black;
 }
@@ -865,7 +873,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 9px;
+}
+.form__row--textarea {
+  margin-bottom: 30px;
 }
 
 .form__block {
@@ -880,7 +891,7 @@ img {
 
 .form__input {
   width: 100%;
-  padding: 13px 11px;
+  padding: 16px 11px;
   border: solid 3px transparent;
   border-radius: 4px;
 }
@@ -899,6 +910,10 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.form__controls--radio {
+  margin-bottom: 46px;
 }
 
 .form__title {
@@ -915,7 +930,6 @@ img {
       -ms-user-select: none;
           user-select: none;
   margin-right: 16px;
-  margin-bottom: 24px;
 }
 .radio:last-child {
   margin-right: 0;
@@ -923,7 +937,6 @@ img {
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
-  margin-bottom: 69px;
 }
 .radio--checkbox .radio__visible:before {
   background: url("../img/icon/tick.png") center center no-repeat;

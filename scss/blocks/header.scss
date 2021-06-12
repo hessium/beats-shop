@@ -9,15 +9,10 @@
   height: 40px;
 }
 
-.logo {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .menu__list {
   display: flex;
   align-items: center;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
 }
 
 .menu__item {
@@ -29,10 +24,11 @@
 }
 
 .phone-number {
-  font-size: 24px; 
+  font-size: 18px; 
   text-decoration: none;
   display: flex;
   align-items: center;
+  font-family: "Play", Arial, Helvetica, sans-serif;
 }
 
 .phone-number__icon-elem {
