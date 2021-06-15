@@ -1,18 +1,41 @@
 .benefits {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.benefits-container {
+  @include tablets {
+    margin: 0;
+  }
 }
 
 .benefits__item {
   flex: 1;
   padding: 0 3%;
   position: relative;
+  
+  @include tablets {
+    padding: 0 1%;
+  }
+
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(50px);
+  }
 
   &:before {
     content: url('../img/icon/separator.png');
     position: absolute;
-    top: 55px;
+    top: rem(55px);
     right: 0;
     transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:first-child {

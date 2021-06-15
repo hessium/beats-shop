@@ -1,10 +1,15 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+$tablets: 768px;
+$phones: 480px;
+
 $grey: #F5F5F5;
 $white: #ffffff;
 
 $z-fixed-menu: 100;
+
+@import "media.scss";
 
 @import "layout/normalize.scss";
 
@@ -29,3 +34,6 @@ $z-fixed-menu: 100;
 @import "blocks/radio.scss";
 @import "blocks/fixed-menu.scss";
 @import "blocks/map.scss";
+@import "blocks/hamburger.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";

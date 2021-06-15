@@ -1,10 +1,10 @@
 .btn {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: bold;
-  padding: 19px 40px;
+  padding: rem(19px) rem(40px);
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   display: inline-block;
   border: none;
@@ -33,12 +33,16 @@
     color: #fff;
     background: transparent;
     text-transform: none;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: normal;
-    margin-left: -22px;
+    margin-left: rem(-22px);
 
     &:hover {
       color: #000000;
     }
+  }
+
+  @include tablets {
+    padding: rem(23px) rem(44px);
   }
 }
