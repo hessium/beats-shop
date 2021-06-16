@@ -47,17 +47,40 @@
   display: flex;
   align-items: center;
   font-family: "Play", Arial, Helvetica, sans-serif;
+  
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__icon-elem {
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px);
+  
+    &:hover {
+      fill: #E01F3D;
+    }
+  }
+
+  &__text {
+
+    &:hover {
+    color: #E01F3D;
+    }
+  }
 }
 
-.phone-number__icon {
-  flex-shrink: 0;
-}
 
-.phone-number__icon-elem {
+
+/* .phone-number__icon-elem {
   width: rem(12px);
   height: rem(12px);
   margin-right: rem(6px);
-}
+
+  &:hover {
+    fill: #E01F3D;
+  }
+} */
 
 .menu__link {
   text-decoration: none;
