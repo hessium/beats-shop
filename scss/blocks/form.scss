@@ -2,9 +2,9 @@
   display: flex;
 
   @include tablets {
+    max-width: 466px; margin: 0 auto;
     flex-direction: column;
-    padding: 0 16%;
-    margin-right: rem(15px);
+    padding: 0;
   }
 
   @include phones {
@@ -49,6 +49,10 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include phones {
+    margin-bottom: rem(7px);
+  }
 }
 
 .form__input {
@@ -86,7 +90,7 @@
   }
 
   @include phones {
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -101,5 +105,5 @@
 
 .form__btns {
   display: flex;
-  justify-content: flex-start
+  justify-content: center;
 }

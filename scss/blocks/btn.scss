@@ -45,4 +45,8 @@
   @include tablets {
     padding: rem(23px) rem(44px);
   }
+
+  @include phones {
+    font-size: rem(18px);
+  }
 }

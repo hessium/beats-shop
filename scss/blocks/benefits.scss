@@ -1,3 +1,10 @@
+.container__benefits{
+
+  @include tablets {
+  padding: 0 10px; width: 100%;
+  }
+}
+
 .benefits {
   display: flex;
 
@@ -18,7 +25,7 @@
   position: relative;
   
   @include tablets {
-    padding: 0 1%;
+    padding: 0 0.4%;
   }
 
   @include phones {

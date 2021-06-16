@@ -9,6 +9,10 @@
 
 .headline__title {
   margin-bottom: rem(18px);
+
+  @include phones {
+    margin-bottom: rem(11px);
+  }
 }
 
 .headline__subtitle {

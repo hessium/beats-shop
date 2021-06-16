@@ -29,8 +29,8 @@
 
     &:before {
       content: "";
-      width: rem(323px);
-      height: rem(323px);
+      width: rem(360px);
+      height: rem(360px);
       margin-bottom: rem(64px);
       background: url('../img/head.png') center center / contain no-repeat;
     }
@@ -73,6 +73,7 @@
     font-size: rem(32px);
     line-height: rem(36px);
     padding: 0 11%;
+    margin-bottom: rem(24px);
   }
 }
 

@@ -1,6 +1,11 @@
 .socials__item {
   width: rem(30px);
   height: rem(30px);
+  margin-right: rem(11px);
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .socials__link {

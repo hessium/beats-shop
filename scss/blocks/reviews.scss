@@ -83,6 +83,10 @@
   @include tablets {
     margin-bottom: rem(30px);
   }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .reviews__author {
