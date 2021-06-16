@@ -1,0 +1,12 @@
+.socials__item {
+  width: rem(30px);
+  height: rem(30px);
+}
+
+.socials__link {
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: #000000;
+  }
+}
