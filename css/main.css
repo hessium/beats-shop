@@ -435,7 +435,7 @@ img {
 .hero-section {
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 36.1111111111rem;
+  min-height: 36.6666666667rem;
   color: #292929;
   position: relative;
 }
@@ -542,7 +542,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero__title-desc {
-    padding: 0px 16%;
+    padding: 0 16%;
   }
 }
 
@@ -813,7 +813,7 @@ img {
 .headline__subtitle {
   padding: 0 22%;
   font-size: 0.8888888889rem;
-  line-height: 18, 2.8333333333rem;
+  line-height: 2.8333333333rem;
 }
 @media screen and (max-width: 768px) {
   .headline__subtitle {
@@ -1389,8 +1389,8 @@ img {
 }
 
 .hamburger {
-  width: 24px;
-  height: 20px;
+  width: 1.3333333333rem;
+  height: 1.1111111111rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1411,7 +1411,7 @@ img {
 .hamburger__plank {
   display: block;
   background: #292929;
-  height: 4px;
+  height: 0.2222222222rem;
   border-radius: 10px;
 }
 

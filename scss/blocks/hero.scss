@@ -1,7 +1,7 @@
 .hero-section {
   background-color: $grey;
   height: 100vh;
-  min-height: rem(650px);
+  min-height: rem(660px);
   color: #292929;
   position: relative;
 
@@ -89,6 +89,6 @@
   }
 
   @include phones {
-    padding: 0px 16%;
+    padding: 0 16%;
   }
 } 
