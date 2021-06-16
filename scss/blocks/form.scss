@@ -105,5 +105,9 @@
 
 .form__btns {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+
+  @include tablets {
+    justify-content: center;
+  }
 }
