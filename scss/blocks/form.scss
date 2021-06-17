@@ -113,5 +113,10 @@
 
   @include tablets {
     justify-content: center;
+    padding-left: rem(50px);
+  }
+
+  @include phones {
+    padding-left: 0;
   }
 }

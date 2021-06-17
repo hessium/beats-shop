@@ -66,7 +66,7 @@
   font-size: rem(48px);
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: rem(28px);
+  margin-bottom: rem(22px);
   text-transform: uppercase;
 
   @include tablets {
@@ -85,8 +85,10 @@
 
 .hero__title-desc {
   font-size: rem(21px);
-  margin-bottom: rem(33px);
+  margin-bottom: rem(36px);
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   padding-right: 14%;
+  line-height: rem(25px);
   
   @include tablets {
     padding-right: 0;

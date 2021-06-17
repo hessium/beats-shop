@@ -516,7 +516,7 @@ img {
   font-size: 2.6666666667rem;
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 1.5555555556rem;
+  margin-bottom: 1.2222222222rem;
   text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
@@ -537,8 +537,10 @@ img {
 
 .hero__title-desc {
   font-size: 1.1666666667rem;
-  margin-bottom: 1.8333333333rem;
+  margin-bottom: 2rem;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   padding-right: 14%;
+  line-height: 1.3888888889rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title-desc {
@@ -1007,8 +1009,10 @@ img {
   }
 }
 
-.benefit__text {
-  padding-top: 0.5555555556rem;
+@media screen and (max-width: 480px) {
+  .benefit__text {
+    padding-top: 0.5555555556rem;
+  }
 }
 
 .benefits-section {
@@ -1363,6 +1367,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 2.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__btns {
+    padding-left: 0;
   }
 }
 
