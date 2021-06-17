@@ -68,6 +68,10 @@
     @include tablets {
       height: rem(82px);
     }
+    
+    @include phones {
+      height: rem(90px);
+    }
   }
 
   &:focus {

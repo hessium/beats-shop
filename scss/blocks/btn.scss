@@ -22,11 +22,20 @@
   &--theme--darkred {
     color: #ffffff;
     background: #CA1B36;
+    
+    @include phones {
+      margin-left: rem(28px);
+    }
 
     &:hover {
       color: #CA1B36;
       background: #ffffff;
     }
+  }
+
+  
+  @include tablets {
+    padding: rem(25px) rem(48px);
   }
 
   &--theme--transparent {
@@ -37,16 +46,17 @@
     font-weight: normal;
     margin-left: rem(-22px);
 
+    @include phones {
+      font-size: rem(18px);
+      padding: rem(21px) rem(24px);
+      margin-left: 10px;
+    }
+
     &:hover {
       color: #000000;
     }
   }
 
-  @include tablets {
-    padding: rem(23px) rem(44px);
-  }
 
-  @include phones {
-    font-size: rem(18px);
-  }
+  
 }
