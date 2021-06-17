@@ -1367,7 +1367,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 2.7777777778rem;
+    padding-left: 3rem;
   }
 }
 @media screen and (max-width: 480px) {
