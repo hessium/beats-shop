@@ -23,8 +23,12 @@
   text-transform: uppercase;
   color: #000;
 
+  @include tablets {
+    font-size: rem(51px);
+  }
+
   @include phones {
-    font-size: rem(32px);
+    font-size: rem(36px);
   }
 }
 
@@ -36,6 +40,11 @@
     bottom: rem(-26px);
     left: 5%;
     content: url("../img/icon/Ellipse.png");
+
+    @include phones {
+      bottom: rem(-23px);
+      left: 10%;
+    }
   }
 }
 

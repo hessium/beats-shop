@@ -6,5 +6,9 @@
     position: absolute;
     bottom: rem(-24px);
     left: 5%;
+
+    @include phones {
+      left: 10%;
+    }
   }
 }

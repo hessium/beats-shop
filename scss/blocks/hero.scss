@@ -12,6 +12,11 @@
     bottom: rem(-28px);
     right: 9%;
     content: url('../img/icon/Rectangle.png');
+    
+    @include phones {
+      bottom:  rem(-26px);
+      right: 10%;
+    }
   }
 }
 
@@ -65,12 +70,13 @@
   text-transform: uppercase;
 
   @include tablets {
-    margin-bottom: rem(14px);
+    font-size: rem(51px);
+    margin-bottom: rem(12px);
     padding: 0 5%;
   }
 
   @include phones {
-    font-size: rem(32px);
+    font-size: rem(36px);
     line-height: rem(36px);
     padding: 0 11%;
     margin-bottom: rem(24px);
@@ -81,14 +87,14 @@
   font-size: rem(21px);
   margin-bottom: rem(33px);
   padding-right: 14%;
-  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
-
+  
   @include tablets {
     padding-right: 0;
     padding: 0 25%;
   }
 
   @include phones {
-    padding: 0 16%;
+    padding: 0; 
+    width: 341px;
   }
 } 

@@ -1,7 +1,7 @@
 .container__benefits{
 
   @include tablets {
-  padding: 0 10px; width: 100%;
+  padding: 0 rem(10px); width: 100%;
   }
 }
 
@@ -30,7 +30,7 @@
 
   @include phones {
     padding: 0;
-    margin-bottom: rem(50px);
+    margin-bottom: rem(35px);
   }
 
   &:before {

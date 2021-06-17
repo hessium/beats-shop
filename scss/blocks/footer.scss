@@ -1,9 +1,14 @@
 .footer {
   display: flex;
+  padding: rem(20px) 0;
 
   &__container {
    display: flex;
    justify-content: space-between;
+
+   @include tablets {
+     padding-right: rem(30px);
+   }
 
    @include phones {
     flex-direction: column;
@@ -48,6 +53,11 @@
 
   &__place {
     margin-bottom: rem(3px);
+
+    @include tablets{
+      font-size: rem(22px);
+    }
+  
    }
 
   @include phones {
@@ -55,6 +65,7 @@
 
     &__place {
      margin-bottom: rem(12px);
+     font-size: rem(20px);
     }
   }
 
@@ -63,8 +74,14 @@
 
 
 .footer__phone-number {
+
+  @include tablets {
+    font-size: rem(21px);
+  }
+  
   @include phones {
     justify-content: center;
+    font-size: rem(18px);
   }
 }
 /* .footer-container__section {

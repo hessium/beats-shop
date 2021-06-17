@@ -1,6 +1,6 @@
 .socials__item {
-  width: rem(30px);
-  height: rem(30px);
+  width: rem(32px);
+  height: rem(32px);
   margin-right: rem(11px);
 
   &:last-child {
@@ -14,4 +14,9 @@
   &:hover {
     fill: #000000;
   }
+}
+
+.socials__icon {
+  width: rem(32px);
+  height: rem(32px);
 }
