@@ -231,13 +231,13 @@
                     </li>
                     <li class="assortment__parameter">
                       <div class="assortment__key">Вес</div>
-                    <div class="assortment__value">215гр</div> 
+                    <div class="assortment__value">215 грамм</div> 
                     </li>
                   </ul>
                   <div class="assortment__footer">
                     <div class="assortment__price">14 990 ₽</div>
                     <div class="assortment__button">
-                      <button type="button" class="btn btn--theme--red">заказать</button>
+                      <button type="button" class="btn__assortment btn--theme--red">заказать</button>
                     </div>
                   </div>           
                 </div>
@@ -363,16 +363,18 @@
       <section class="section order-section section--font-color--white">
         <div class="container">
           <h2 class="section__title order-section__title">Закажите доставку</h2>
-          <form class="form">
+          <form id="myForm" class="form">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="name"  class="form__input">
+                  <div class="form__error"></div>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="phone" class="form__input">
+                  <div class="form__error"></div>
                 </label>
               </div>
               <div class="form__row">
@@ -404,7 +406,8 @@
               <div class="form__row form__row--textarea">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea name="comment" class="form__input form__input--textarea"></textarea>
+                  <div class="form__error"></div>
                 </label>
               </div>
                 <div class="form__controls">
@@ -427,7 +430,7 @@
                   </label>
                 </div>
                 <div class="form__btns">
-                  <input type="submit" value="Заказать" class=" btn btn--theme--darkred">
+                  <input type="submit" id="sendForm" value="Заказать" class=" btn btn--theme--darkred">
                   <input type="reset" value="Очистить" class="btn btn--theme--transparent">
                 </div>
               </div>
@@ -505,7 +508,35 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
-  <script src="/js/slider.js">
-  </script>
+  <div class="fullscreen-menu">
+    <a href="" class="fullscreen-menu_close"></a>
+    <nav class="menu menu--vertical">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Наушники</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Команда</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Меню</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Отзывы</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Как мы работаем</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="js/slider.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>

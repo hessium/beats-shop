@@ -1,0 +1,10 @@
+.menu--vertical {
+  display: none;
+
+  @include tablets {
+  
+  &--active {
+    display: block;
+  }
+}
+}

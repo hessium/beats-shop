@@ -31,15 +31,32 @@
 
 .assortment__photo {
   flex-shrink: 0;
-  width: 43%;
+  width: 50%;
+  padding: rem(30px) 0 0 0;
+
+  @include tablets {
+    width: 42%;
+    padding: 0;
+    margin-bottom: rem(52px);
+  }
+
+  @include phones {
+    width: 68%;
+    margin-bottom: rem(26px);
+  }
 }
 
 .assortment__content {
-  width: 40%;
+  width: 46%;
+
+  @include tablets {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 .assortment__composition {
-  margin-bottom: 25px;
+  margin-bottom: rem(27px);
 }
 
 .assortment__title {
@@ -49,6 +66,18 @@
   color:#292929;
   font-weight: bold;
   text-transform: uppercase;
+
+  @include tablets {
+    font-size: rem(30px);
+    line-height: rem(33px);
+    margin-bottom: rem(16px);
+  }
+
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(34px);
+    margin-bottom: rem(21px);
+  }
 }
 
 .assortment__text {
@@ -56,43 +85,88 @@
   font-size: rem(16px);
   line-height: 1.2;
   margin-bottom: rem(27px);
+  padding-right: 13%;
+
+  @include tablets {
+    padding-right: 0;
+    line-height: rem(21px);
+    font-size: rem(16px);
+  }
+
+  @include phones {
+    line-height: rem(22px);
+    font-size: rem(18px);
+  }
 }
 
 .assortment__params {
   display: flex;
   line-height: 1.2;
   margin-bottom: rem(24px);
+  text-align: left;
+
+  @include tablets {
+    justify-content: center;
+  }
+
+  @include phones {
+    margin-bottom: rem(24px);
+  }
 }
 
 .assortment__parameter {
-  margin-right: rem(86px);
-  
+  margin-right: rem(96px);
+
   
   &:last-child {
-    margin-right: 0;
+    margin-right: rem(24px);
   }
 }
 
 .assortment__key {
 color: #666666;
+font-size: rem(16px);
+
+  @include phones {
+    margin-bottom: rem(4px);
+    font-size: rem(18px);
+  }
 }
 
 .assortment__value {
   font-weight: bold;
   color: #000000;
+  font-size: rem(18px);
+
+  @include phones {
+    font-size: rem(21px);
+  }
 }
 
 .assortment__footer {
   display: flex;
   align-items: center;
 
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .assortment__price {
   font-size: rem(36px);
   line-height: 1.7;
   color: #151515;
-  margin-right: rem(13px);
+  margin-right: rem(18px);
+
+  @include tablets {
+    font-size: rem(43px);
+    margin-right: rem(44px);
+  }
+
+  @include phones {
+    font-size: rem(36px);
+    margin-right: rem(30px);
+  }
 }
 
 .assortment__control {
@@ -111,18 +185,38 @@ color: #666666;
   fill: none;
 
   &--left {
-    left: -3%;
-  
+    left: -6%;
+    top: 53%;
+    
+    @include tablets {
+      left: 18%;
+      top: 28%;
+    }
+
+    @include phones {
+      left: -1%;
+      top: 25%;
+    }
   }
 
   &--right {
-    right: -3%;
+    right: 1%;
+    top: 53%;
 
+    @include tablets {
+      right: 18%;
+      top: 28%;
+    }
+
+    @include phones {
+      right: 0%;
+      top: 25%;
+    }
   }
 }
 
 .assortment__control-ico {
-  width: 15px;
-  height: 29px;
+  width: rem(15px);
+  height:  rem(29px);
   
 }
