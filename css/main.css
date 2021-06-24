@@ -701,6 +701,7 @@ img {
   line-height: 1;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 .btn--theme--red {
   color: #ffffff;
@@ -1637,6 +1638,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .hamburger--active .hamburger__plank {
+    background: #fff;
+  }
   .hamburger--active .hamburger__plank:nth-child(1) {
     opacity: 0;
   }
