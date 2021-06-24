@@ -1,0 +1,38 @@
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  flex: 1;
+  margin-right: rem(20px);
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team__photo {
+  margin-bottom: rem(25px);
+}
+
+.team__description{
+  font-size: rem(16px);
+}
+
+.team__name {
+  color: #292929;
+  font-weight: bold;
+  font-size: rem(18px);
+}
+
+.team__post {
+  color: #292929;
+  margin-bottom: rem(4px);
+}
+
+.team__desc {
+  color: #666666;
+  
+}
