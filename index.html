@@ -368,7 +368,8 @@
         <div class="container reviews__container">
           <h2 class="section__title reviews-section__title">Отзывы</h2>
           <div class="reviews">
-            <div class="reviews__display">
+            <ul class="reviews__display">
+             <li class="reviews__item reviews__item--active" data-linked-with="one">
               <div class="reviews__display-inner">
                 <div class="reviews__avatar">
                   <img src="img/Billie.png" alt="bilie eilish" class="reviews__avatar-img">
@@ -386,21 +387,52 @@
                   <div class="reviews__author">Билли Айлиш</div>
                 </article>
               </div>
-            </div>
-            <ul class="reviews__switcher">
-              <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                <a href="#" class="interactive-avatar__link">
+             </li>
+             <li class="reviews__item" data-linked-with="two">
+              <div class="reviews__display-inner">
+                <div class="reviews__avatar">
+                  <img src="img/Vadim.png" alt="vadim" class="reviews__avatar-img">
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">Крутой дизайн</h3>
+                  <div class="reviews__text">
+                    <p>
+                      После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.                    </p>
+                  </div>
+                  <div class="reviews__author">Вадим Грачем</div>
+                </article>
+              </div>
+             </li>
+             <li class="reviews__item" data-linked-with="three">
+              <div class="reviews__display-inner">
+                <div class="reviews__avatar">
+                  <img src="img/Maria.png" alt="Maria" class="reviews__avatar-img">
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">На долго хватает заряда</h3>
+                  <div class="reviews__text">
+                    <p>
+                      Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</p>
+                  </div>
+                  <div class="reviews__author">Мария Орлова</div>
+                </article>
+              </div>
+             </li>
+            </ul>
+            <ul class="reviews-switcher">
+              <li class="reviews-switcher__item interactive-avatar interactive-avatar--active">
+                <a href="#" class="interactive-avatar__link" data-open="one">
                   <img src="img/Billie.png" alt="billie eilish" class="interactive-avatar__img">
                 </a>
               </li>
-              <li class="reviews__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
-                  <img src="img/Billie.png" alt="billie eilish" class="interactive-avatar__img">
+              <li class="reviews-switcher__item interactive-avatar">
+                <a href="#" class="interactive-avatar__link" data-open="two">
+                  <img src="img/Vadim.png" alt="billie eilish" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
-                  <img src="img/Billie.png" alt="billie eilish" class="interactive-avatar__img">
+                <a href="#" class="interactive-avatar__link" data-open="three">
+                  <img src="img/Maria.png" alt="billie eilish" class="interactive-avatar__img">
                 </a>
               </li>
             </ul>
@@ -584,8 +616,10 @@
     </nav>
   </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/form.js"></script>
   <script src="js/hamburger.js"></script>
+  <script src="js/switcher.js"></script>
 </body>
 </html>

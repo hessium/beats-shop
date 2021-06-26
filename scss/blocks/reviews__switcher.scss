@@ -1,10 +1,10 @@
-.reviews__switcher {
+.reviews-switcher {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.reviews__switcher-item {
+.reviews-switcher__item {
   margin-right: rem(6px);
 
   &:last-child {
