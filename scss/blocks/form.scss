@@ -120,3 +120,21 @@
     padding-left: 0;
   }
 }
+
+.modal {
+  display: none;
+  background: #ffffff;
+  font-size: rem(18px);
+  color: #000000;
+  justify-content: center;
+
+  &__content {
+    margin-bottom: rem(18px);
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+

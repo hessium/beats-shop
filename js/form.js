@@ -16,7 +16,7 @@ function validateForm(form) {
   return valid;
 }
 
-function validate(form) {
+function validate(element) {
   
   if (!element.checkValidity()) {
     element.nextElementSibling.classList.add('form__error--active');
@@ -33,7 +33,19 @@ function validate(form) {
 
 submitButton.addEventListener("click", function (e) {
   e.preventDefault();
+
   if(validateForm(form)) {
-    alert('Форма валидна, отправляем на сервер!');
+  
+  $.fancybox.open({
+    src: "#modal",
+    type: "inline"
+  })
+    
   }
+});
+
+$(".app-submit-btn").click(e => {
+  e.preventDefault();
+
+  $.fancybox.close();
 })

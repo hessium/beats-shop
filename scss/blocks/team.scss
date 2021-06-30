@@ -1,4 +1,4 @@
-.team__list {
+.team {
   display: flex;
   justify-content: space-between;
 }
@@ -7,6 +7,13 @@
   flex: 1;
   margin-right: rem(20px);
   text-align: center;
+  position: relative;
+
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: rem(16px);
+    justify-content: center;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -15,24 +22,85 @@
 
 .team__photo {
   margin-bottom: rem(25px);
+
+  @include tablets {
+    justify-content: center;
+    display: flex;
+  }
 }
 
-.team__description{
-  font-size: rem(16px);
-}
+
 
 .team__name {
   color: #292929;
   font-weight: bold;
-  font-size: rem(18px);
+  font-size: rem(20px);
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: rem(11px);
+
+  @include tablets {
+    font-size: rem(24px);
+    margin-bottom: rem(16px);
+  }
 }
 
-.team__post {
+.team__description{
+  overflow: hidden;
+  font-size: rem(16px);
+  height: 0;
+  transition: height .3s;
+}
+
+.team--version--desktop .team__description {
+  position: absolute;
+  top: 100%;
+
+}
+
+.team--version--desktop {
+  @include tablets {
+    display: none;
+  }
+}
+
+.team--version--mobile {
+  display: none;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.team__description-block {
+  height: 75px;
+
+  @include tablets {
+    height: 370px;
+  }
+}
+
+.team__post { 
   color: #292929;
+
+  font-size: rem(16px);
   margin-bottom: rem(4px);
+
+  @include tablets {
+    font-size: rem(19px);
+    margin-bottom: rem(10px);
+    font-weight: bold;
+  }
 }
 
 .team__desc {
   color: #666666;
-  
+  font-size: rem(16px);
+
+  @include tablets {
+    font-size: rem(17px);
+  }
 }

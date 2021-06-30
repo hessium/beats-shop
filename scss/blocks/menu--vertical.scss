@@ -8,3 +8,11 @@
   }
 }
 }
+
+.overlay {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}

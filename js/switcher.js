@@ -14,4 +14,4 @@ $(".interactive-avatar__link").click(e => {
 
   itemToShow.addClass("active").siblings().removeClass("active");
   curItem.addClass("active").siblings().removeClass("active");
-})
+});

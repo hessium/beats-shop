@@ -120,4 +120,7 @@
   <symbol viewBox="0 0 15 29" id="right">
 <path d="M1 1L13.0858 13.0858C13.8668 13.8668 13.8668 15.1332 13.0858 15.9142L1 28" />
   </symbol>
+ <!--  <symbol viewBox="0 0 90 90" id="team">
+  <path d="M4 7L0.102887 0.249999L7.89711 0.25L4 7Z"/>
+  </symbol> -->
 </svg>
