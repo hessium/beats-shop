@@ -39,12 +39,30 @@
   background-color: white;
   cursor: pointer;
   margin-bottom: rem(11px);
+  position: relative;
 
   @include tablets {
     font-size: rem(24px);
     margin-bottom: rem(16px);
   }
+
+  &:before {
+    content: "";
+    position: absolute;
+    border: 9px solid transparent; 
+    border-top: 9px solid #E01F3D;
+    top: 37%;
+    right: -10%;
+   
+  
+  }
 }
+
+/* .active .team__name:before {
+  top: 37%;
+  right: -10%;
+  border-bottom: 9px solid #E01F3D; 
+} */
 
 .team__description{
   overflow: hidden;

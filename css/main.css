@@ -2335,6 +2335,7 @@ display: flex;
   background-color: white;
   cursor: pointer;
   margin-bottom: 0.6111111111rem;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .team__name {
@@ -2342,7 +2343,20 @@ display: flex;
     margin-bottom: 0.8888888889rem;
   }
 }
+.team__name:before {
+  content: "";
+  position: absolute;
+  border: 9px solid transparent;
+  border-top: 9px solid #E01F3D;
+  top: 37%;
+  right: -10%;
+}
 
+/* .active .team__name:before {
+  top: 37%;
+  right: -10%;
+  border-bottom: 9px solid #E01F3D; 
+} */
 .team__description {
   overflow: hidden;
   font-size: 0.8888888889rem;
