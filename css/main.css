@@ -2411,7 +2411,12 @@ display: flex;
 }
 @media screen and (max-width: 768px) {
   .team__description-block {
-    height: 395px;
+    height: 21.9444444444rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__description-block {
+    height: 16.6666666667rem;
   }
 }
 
@@ -2448,5 +2453,56 @@ display: flex;
     padding: 0 22%;
     line-height: 1.1666666667rem;
   }
+}
+
+.products-menu-section {
+  position: relative;
+  /* background: url("../img/Slider.png") center center/cover no-repeat; */
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-menu__title {
+  width: 5.5555555556rem;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: black;
+}
+
+.products-menu__content {
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+  position: relative;
+  background: rgba(51, 53, 55, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #ffffff;
+}
+
+.products-menu__container {
+  padding: 40px 73px 45px 26px;
+  font-size: 0.8888888889rem;
+  line-height: 1.3333333333rem;
+  font-family: "Alegreya Sans";
 }
 /*# sourceMappingURL=main.css.map */

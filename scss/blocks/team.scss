@@ -104,10 +104,14 @@
 }
 
 .team__description-block {
-  height: 75px;
+  height: (75px);
 
   @include tablets {
-    height: 395px;
+    height: rem(395px);
+  }
+
+  @include phones {
+    height: rem(300px);
   }
 }
 
