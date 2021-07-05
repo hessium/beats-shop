@@ -1,6 +1,6 @@
 .products-menu-section {
   position: relative;
-  background: url("../img/workout.png") center center/cover no-repeat;
+  background: url("../img/workout.png") left center/cover no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -35,6 +35,8 @@
   display: flex;
   text-decoration: none;
   font-size: rem(36px);
+  font-weight: bold;
+  padding-bottom: 10%;
 
   &-grey {
     background-color: #999999;
@@ -46,6 +48,10 @@
 
   &-red {
     background-color: #E01F3C;
+  }
+
+  @include phones {
+    width: rem(90px);
   }
 }
 

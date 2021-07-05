@@ -1,19 +1,62 @@
-const mesureWidth = (item) => {
-  return 500;
-}
+(function () {
+  const mesureWidth = item => {
+    let reqItemWidth = 0;
 
-const openItem = item => {
-  const hiddenContent = item.find(".products-menu__content");
-  const reqWidth = mesureWidth();
+    const screenWidth = $(window).width();
+    const container = item.closest(".products-menu");
+    const titlesBLocks =  container.find(".products-menu__title");
+    const titlesWidth = titlesBLocks.width()  * titlesBLocks.length;
 
-  hiddenContent.width(reqWidth);
-}
+    const textContainer= item.find(".products-menu__container");
+    const paddingLeft = parseInt(textContainer.css("padding-left"));
+    const paddingRight = parseInt(textContainer.css("padding-right"));
 
-$(".products-menu__title").on("click", e => {
-  e.preventDefault();
+    const isMobile = window.matchMedia("(max-width: 769px)").matches;
+
+    if(isMobile) {
+      reqItemWidth = screenWidth - titlesWidth;
+    } else {
+      reqItemWidth = 500;
+    }
+
+    return {
+      container: reqItemWidth,
+      textContainer: reqItemWidth - paddingLeft - paddingRight
+    }
+  };
   
-  const $this = $(e.currentTarget);
-  const item = $this.closest(".products-menu__item");
+  const closeEveryItemInContainer = container => {
+    const items = container.find(".products-menu__item");
+    const content = container.find(".products-menu__content");
 
-  openItem(item);
-});
+    items.removeClass("active");
+    content.width(0);
+  }
+
+  const openItem = item => {
+    const hiddenContent = item.find(".products-menu__content");
+    const reqWidth = mesureWidth(item);
+    const textBlocks = item.find(".products-menu__container");
+
+    item.addClass("active");
+    hiddenContent.width(reqWidth.container);
+    textBlocks.width(reqWidth.textContainer);
+  }
+  
+  $(".products-menu__title").on("click", e => {
+    e.preventDefault();
+    
+    const $this = $(e.currentTarget);
+    const item = $this.closest(".products-menu__item");
+    const itemOpened = item.hasClass("active");
+    const container = $this.closest(".products-menu");
+
+    if (itemOpened) {
+      closeEveryItemInContainer(container)
+    } else {
+      closeEveryItemInContainer(container)
+      openItem(item);
+    }
+  });
+  })();
+

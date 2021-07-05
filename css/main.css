@@ -375,8 +375,17 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -434,8 +443,8 @@ img {
 
 .hero-section {
   background-color: #F5F5F5;
-  height: 100vh;
-  min-height: 36.6666666667rem;
+  height: 100%;
+  min-height: 36.1111111111rem;
   color: #292929;
   position: relative;
 }
@@ -766,7 +775,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.6666666667rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1546,12 +1555,15 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.fixed-menu__link:before.fixed-menu--shadowed {
+  background: #ffffff;
+}
 
 .map-section__map {
-  background: url("../img/map.png") center center/cover no-repeat;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  /* background: url('../img/map.png') center center / cover no-repeat;
+  flex: 1; */
+  width: 100%;
+  height: 100%;
 }
 
 .hamburger {
@@ -2457,7 +2469,7 @@ display: flex;
 
 .products-menu-section {
   position: relative;
-  background: url("../img/workout.png") center center/cover no-repeat;
+  background: url("../img/workout.png") left center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2512,6 +2524,8 @@ display: flex;
   display: flex;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10%;
 }
 .products-menu__title-grey {
   background-color: #999999;
