@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hessium/beats-shop/issues"
   },
-  "homepage": "https://github.com/hessium/beats-shop#readme"
+  "homepage": "https://github.com/hessium/beats-shop#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
