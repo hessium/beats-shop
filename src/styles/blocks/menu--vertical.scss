@@ -1,0 +1,18 @@
+.menu--vertical {
+  display: none;
+
+  @include tablets {
+  
+  &--active {
+    display: block;
+  }
+}
+}
+
+.overlay {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}
