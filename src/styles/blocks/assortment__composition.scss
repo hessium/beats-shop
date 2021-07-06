@@ -1,0 +1,73 @@
+.assortment__composition {
+  position: relative;
+  display: inline-flex;
+  &:hover  { 
+    .assortment-composition__list {
+    left: 100%;
+    opacity: 1;
+  }}
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.assortment-composition__list {
+  position: absolute;
+  top: 0;
+  left: -99999px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background: #d5d5d5;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
+  padding: 18px 13px 24px 14px;
+  min-width: 272px;
+}
+
+.assortment-composition__button {
+  background-color: #9A9A9A;
+  display: flex;
+  padding: 24px;
+  border-radius: 4px;
+  fill: #ffffff;
+  align-items: center;
+  width: 91px;
+  height: 91px;
+
+ 
+}
+
+.assortment-composition__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 10px 12px;
+  color: #000000;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.assortment-composition__icon {
+  width: 42px;
+  height: 42px;
+}
+
+.assortment-composition__parametr-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.assortment-composition__desc {
+  flex-shrink: 0;
+}
+
+.assortment-composition__text-params {
+  flex-shrink: 0;
+  margin-left: auto;
+}

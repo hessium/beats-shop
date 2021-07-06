@@ -1,0 +1,13 @@
+.reviews-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-switcher__item {
+  margin-right: rem(6px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
