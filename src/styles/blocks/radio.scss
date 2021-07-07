@@ -1,0 +1,67 @@
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-right: rem(16px);
+
+
+  &:last-child{
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+
+
+  &--checkbox {
+    .radio__visible {
+      border-radius: 0;
+      
+    
+
+     &:before {
+        background: url('../img/icon/tick.png') center center no-repeat;
+      }
+    }
+  }
+}
+
+.radio__elem {
+  display: none;
+
+  &:checked ~ .radio__visible {
+    &:before {
+      display: block;
+    }
+  }
+}
+
+.radio__visible {
+  width: rem(26px);
+  height: rem(26px);
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: rem(10px);
+
+  &:before {
+    content: "";
+    width: rem(14px);
+    height: rem(14px);
+    background: #E01F3D;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+} 
+
+.radio__title {
+  transform: translateY(5px);
+
+  @include phones {
+    font-size: rem(16px);
+    transform: translateY(2px);
+  }
+}

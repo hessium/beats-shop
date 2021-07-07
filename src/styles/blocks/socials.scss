@@ -1,0 +1,22 @@
+.socials__item {
+  width: rem(32px);
+  height: rem(32px);
+  margin-right: rem(11px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: #000000;
+  }
+}
+
+.socials__icon {
+  width: rem(32px);
+  height: rem(32px);
+}
