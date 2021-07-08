@@ -19,6 +19,7 @@
 }
 
 .phone-number.header__phone-number {
+
   @include tablets {
     display: none;
   }
@@ -75,18 +76,6 @@
     }
   }
 }
-
-
-
-/* .phone-number__icon-elem {
-  width: rem(12px);
-  height: rem(12px);
-  margin-right: rem(6px);
-
-  &:hover {
-    fill: #E01F3D;
-  }
-} */
 
 .menu__link {
   text-decoration: none;

@@ -4,20 +4,15 @@
   user-select: none;
   margin-right: rem(16px);
 
-
   &:last-child{
     margin-right: 0;
     margin-bottom: 0;
   }
 
-
-
   &--checkbox {
     .radio__visible {
       border-radius: 0;
       
-    
-
      &:before {
         background: url('../img/icon/tick.png') center center no-repeat;
       }

@@ -32,11 +32,8 @@
       color: #CA1B36;
       background: #ffffff;
     }
-
-   
   }
 
-  
   @include tablets {
     padding: rem(25px) rem(48px);
   }
@@ -59,7 +56,6 @@
       color: #000000;
     }
   }
-  
 }
 
 .btn__assortment {

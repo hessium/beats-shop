@@ -5,8 +5,6 @@
   color: #292929;
   position: relative;
 
-
-
   &:before {
     position: absolute;
     bottom: rem(-28px);
@@ -58,7 +56,6 @@
 
   @include tablets {
     background: none;
-    
   }
 }
 
