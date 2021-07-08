@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/styles/blocks/interactive-avatar.scss
 .interactive-avatar {
     width: rem(80px);
     height: rem(80px);
@@ -23,4 +24,32 @@
   display: block;
   width: 100%;
   object-fit: cover;
+=======
+.interactive-avatar {
+    width: rem(80px);
+    height: rem(80px);
+    border: rem(6px) solid transparent; 
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.active {
+  border-color: #E01F3D;
+}
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+>>>>>>> b1cf5e6ffc7e9cb5e7a12485c7d106aa668d2fdd:docs/scss/blocks/interactive-avatar.scss
 }

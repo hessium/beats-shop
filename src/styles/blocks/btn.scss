@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/styles/blocks/btn.scss
 .btn {
   font-size: rem(16px);
   font-weight: bold;
@@ -72,4 +73,84 @@
   @include phones {
     padding: rem(27px) rem(51px);
   }
+=======
+.btn {
+  font-size: rem(16px);
+  font-weight: bold;
+  padding: rem(19px) rem(40px);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: rem(100px);
+  line-height: 1;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+
+  &--theme--red {
+    color: #ffffff;
+    background: #E01F3D;
+
+    &:hover {
+      color: #E01F3D;
+      background: #ffffff;
+    }
+  }
+
+  &--theme--darkred {
+    color: #ffffff;
+    background: #CA1B36;
+    
+    @include phones {
+      margin-left: rem(28px);
+    }
+
+    &:hover {
+      color: #CA1B36;
+      background: #ffffff;
+    }
+
+   
+  }
+
+  
+  @include tablets {
+    padding: rem(25px) rem(48px);
+  }
+
+  &--theme--transparent {
+    color: #fff;
+    background: transparent;
+    text-transform: none;
+    font-size: rem(16px);
+    font-weight: normal;
+    margin-left: rem(-22px);
+
+    @include phones {
+      font-size: rem(18px);
+      padding: rem(21px) rem(24px);
+      margin-left: 10px;
+    }
+
+    &:hover {
+      color: #000000;
+    }
+  }
+  
+}
+
+.btn__assortment {
+  padding: rem(23px) rem(46px);
+  font-size: rem(16px);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: rem(100px);
+  line-height: 1;
+  display: inline-block;
+  border: none;
+
+  @include phones {
+    padding: rem(27px) rem(51px);
+  }
+>>>>>>> b1cf5e6ffc7e9cb5e7a12485c7d106aa668d2fdd:docs/scss/blocks/btn.scss
 }
