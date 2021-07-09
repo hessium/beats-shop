@@ -1,0 +1,14 @@
+.benefits-section {
+  position: relative;
+
+  &:before {
+    content: url('../img/icon/triangle.png');
+    position: absolute;
+    bottom: rem(-24px);
+    left: 5%;
+
+    @include phones {
+      left: 10%;
+    }
+  }
+}
