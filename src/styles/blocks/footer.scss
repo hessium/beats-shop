@@ -1,0 +1,155 @@
+
+.footer {
+  display: flex;
+  padding: rem(20px) 0;
+
+  &__container {
+   display: flex;
+   justify-content: space-between;
+
+   @include tablets {
+     padding-right: rem(30px);
+   }
+
+   @include phones {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.footer__col {
+  display: flex;
+  justify-content: flex-start;
+  
+  @include phones {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  &--align--right {
+    justify-content: flex-end;
+    align-items: center;
+
+    @include phones {
+      justify-content: center;
+      text-align: center;
+    }  
+  }
+
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  color: #292929;
+
+  &__place {
+    margin-bottom: rem(3px);
+
+    @include tablets{
+      font-size: rem(22px);
+    }
+  
+   }
+
+  @include phones {
+    margin-bottom: rem(20px);
+
+    &__place {
+     margin-bottom: rem(17px);
+     font-size: rem(20px);
+    }
+  }
+
+ 
+}
+
+.footer__phone-number {
+
+  @include tablets {
+    font-size: rem(21px);
+  }
+  
+  @include phones {
+    justify-content: center;
+    font-size: rem(18px);
+  }
+}
+/* .footer-container__section {
+  height: rem(134px);
+}
+
+.footer-container__content {
+  border-top: 1px solid #192f37;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+
+  &--align--right {
+    align-items: flex-end;
+    display: flex;
+    padding: 0 0 rem(20px);
+
+    @include phones {
+      align-items: center;
+    }
+  }
+}
+
+.footer__socials {
+margin-right: rem(74px);
+display: flex;
+
+  @include phones {
+    margin-right: 0;
+    padding: 0 0 0 rem(160px);
+  }
+}
+
+.inner-footer {
+  margin-top: auto;
+
+  &__container {
+    padding: rem(45px) 0;
+  } 
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  color: #292929;
+  padding: 0 0 rem(20px) rem(86px);
+  
+  @include phones {
+    padding: 0;
+    
+  }
+
+  &__place {
+    margin-bottom: rem(12px);
+  }
+}
+
+.footer__phone-number {
+  color:#E01F3D;
+
+  @include phones {
+    padding: 0 0 0 rem(173px);
+    color:#292929;
+    margin-bottom: rem(19px);
+  }
+} */
+
+

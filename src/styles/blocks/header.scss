@@ -1,0 +1,95 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(31px);
+
+  @include tablets {
+    padding: 0 rem(20px) 0 0;
+  }
+
+  @include phones {
+    padding: 0;
+  }
+}
+
+.header__logo {
+  min-width: rem(40px);
+  height: rem(40px);
+}
+
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu {
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu__item {
+  margin-right: rem(27px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.phone-number {
+  font-size: rem(18px); 
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: "Play", Arial, Helvetica, sans-serif;
+  
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__icon-elem {
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px);
+  
+    &:hover {
+      fill: #E01F3D;
+    }
+  }
+
+  &__text {
+
+    &:hover {
+    color: #E01F3D;
+    }
+  }
+}
+
+
+
+/* .phone-number__icon-elem {
+  width: rem(12px);
+  height: rem(12px);
+  margin-right: rem(6px);
+
+  &:hover {
+    fill: #E01F3D;
+  }
+} */
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
+}
