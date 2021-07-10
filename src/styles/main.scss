@@ -1,0 +1,14 @@
+
+$containerWidth: 940px;
+$baseFontSize: 18px;
+$tablets: 768px;
+$phones: 480px;
+$grey: #F5F5F5;
+$white: #ffffff;
+$z-fixed-menu: 100;
+@import "media.scss";
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+@import "layout/normalize.scss";
+@import "layout/base.scss";
+@import "blocks/*.scss";
