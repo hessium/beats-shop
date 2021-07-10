@@ -31,7 +31,13 @@ task("copy:html", () => {
  return src(`${SRC_PATH}/*.html`)
  .pipe(dest(DIST_PATH))
  .pipe(reload({stream: true}));
-})
+});
+
+task("copy:images", () => {
+  return src(`${SRC_PATH}/img/**/*.*`)
+  .pipe(dest(`${DIST_PATH}/img`))
+  .pipe(reload({stream: true}));
+ });
 
 task('styles', () => {
   return src([...STYLE_LIBS, 'src/styles/main.scss'])
@@ -49,14 +55,16 @@ task('styles', () => {
     // .pipe(gulpif(env === 'prod', gcmq()))
     .pipe(gulpif(env === 'prod', cleanCSS()))
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
-    .pipe(dest(DIST_PATH))
+    .pipe(dest(`${DIST_PATH}/css`))
     .pipe(reload({ stream: true }));
  });
 
 
+
 const libs = [
-  "node_modules/jquery/dist/jquery.js", 
-  "src/scripts/*.js"];
+  // "node_modules/jquery/dist/jquery.js", 
+  // "src/scripts/*.js"
+];
 
 task("scripts", () => {
   return src([...JS_LIBS, "src/scripts/*.js"])
@@ -67,7 +75,7 @@ task("scripts", () => {
   })))
   .pipe(uglify())
   .pipe(gulpif(env === 'dev', sourcemaps.write()))
-  .pipe(dest([DIST_PATH]))
+  .pipe(dest(DIST_PATH))
   .pipe(reload({stream: true}));
 });
 
@@ -95,7 +103,7 @@ task("scripts", () => {
 task("server", () => {
   browserSync.init({
       server: {
-          baseDir: "./dist"
+          baseDir: "./docs"
       },
       open: false
   });
@@ -109,12 +117,12 @@ task("watch", () =>{
 
 task(
   "default", 
-  series("clean", parallel("copy:html", "styles", "scripts"), 
+  series("clean", parallel("copy:html", "copy:images", "styles", "scripts"), 
   parallel("watch", "server")
   )
 );
 
 task(
   "build", 
-  series("clean", parallel("copy:html", "styles", "scripts", "scripts"))
+  series("clean", parallel("copy:html", "copy:images", "styles", "scripts"))
 );
