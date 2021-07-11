@@ -43,6 +43,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "jquery": "^3.6.0",
+    "jquery-touchswipe": "^1.6.19",
     "mobile-detect": "^1.4.5",
     "normalize.css": "^8.0.1"
   }
