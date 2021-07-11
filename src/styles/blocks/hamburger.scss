@@ -110,7 +110,7 @@
 .body--active-menu{
   overflow:hidden;
 
-  &.hamburger--active{
+  .hamburger--active{
     @include tablets {
   
     .hamburger__plank{

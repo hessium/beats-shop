@@ -15,6 +15,10 @@
   align-items: flex-start;
   width: rem(662px);
   height: rem(391px);
+  
+  @include phones {
+    width: 100%;
+  }
 }
 
 .video__player {
